@@ -14,21 +14,18 @@
 </head>
 
 <body>
-    <header class="hero">
-        <div class="row g-0">
-            <div class="col-lg-5 col-12 p-5 text-center d-flex flex-column justify-content-center">
-                <span class="d-block">GIULIANO LA PIANA</span>
-                <h1 class="display-5 fw-bold">Desarrollo Web</h1>
-                <p class="lead my-3 ">
-                    Un buen diseño es una expresión y eso es lo que distingue un buen trabajo de uno excelente.
-                    Fuerte, organizado y sin límites; esto es lo que define todo lo creado por Giuliano.
-                </p>
-                <a href="#contacto" class="btn btn-gradiente fw-bold">CONTÁCTAME</a>
-            </div>
-            <div class="col-lg-7 col-12">
-                <span class="image-container ">
-                    <img src="./img/Cubos.png" class="img-fluid" alt="Imagen de cabecera">
-                </span>
+    <header class="hero" id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="container h-100 d-flex align-items-center position-relative" style="z-index: 2;">
+            <div class="row w-100 g-0">
+                <div class="col-lg-12 col-12 p-5 text-center d-flex flex-column justify-content-center align-items-center hero-content">
+                    <span class="d-block text-uppercase tracking-widest text-white mb-2" style="letter-spacing: 2px; font-weight: 500;">GIULIANO LA PIANA</span>
+                    <h1 class="display-3 fw-bold hero-title" style="color: #fff; letter-spacing: -2px;">Desarrollo Web Next-Gen</h1>
+                    <p class="lead my-4 text-white-50" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+                        Un buen diseño es una expresión y eso es lo que distingue un buen trabajo de uno excelente. <br>Fuerte, organizado y sin límites.
+                    </p>
+                    <a href="#contacto" class="btn btn-gradiente fw-bold mt-3">CONTACTAME</a>
+                </div>
             </div>
         </div>
     </header>
@@ -41,11 +38,11 @@
                     <h2 class="display-4 fw-bold">Diseño con propósito.</h2>
                 </div>
                 <div class="col-xl-5 offset-xl-1">
-                    <p>El medio es el mensaje, pero el mensaje también define al medio. Soy diseñador gráfico y
+                    <p class="text-white-50">El medio es el mensaje, pero el mensaje también define al medio. Soy diseñador gráfico y
                         desarrollador web. Mi área engloba ambos ámbitos en límites no explorados. Mi única regla: sea
                         cual sea el medio, nunca aburrir.</p>
-                    <p>Mi arte es mi forma de expresión y siempre lo será.</p>
-                    <a href="#contacto" class="btn btn-outline-light mt-3">
+                    <p class="text-white-50">Mi arte es mi forma de expresión y siempre lo será.</p>
+                    <a href="#contacto" class="btn btn-gradiente mt-3">
                         MIRA LO QUE HE HECHO <i class="fas fa-arrow-down ms-2"></i>
                     </a>
                 </div>
@@ -53,24 +50,97 @@
         </div>
     </section>
     
+    <!-- Sección Competencias -->
+    <section class="section d-block" style="background-color: #121212; padding: 120px 0;">
+        <div class="container text-center mb-5">
+            <h2 class="display-6 fw-bold text-white mt-3" style="letter-spacing: 2px;">MIS CONOCIMIENTOS DE SOFTWARE</h2>
+        </div>
+        <div class="container" style="max-width: 900px;">
+            
+            <!-- WordPress -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">WordPress</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 75%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">75%</span>
+            </div>
+
+            <!-- n8n -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">n8n</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">70%</span>
+            </div>
+
+            <!-- Supabase -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">Supabase</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 95%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">95%</span>
+            </div>
+
+            <!-- Photoshop -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">Photoshop</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">85%</span>
+            </div>
+
+            <!-- Illustrator -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">Illustrator</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">80%</span>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">JavaScript</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 65%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">65%</span>
+            </div>
+
+            <!-- HTML y CSS -->
+            <div class="d-flex align-items-center mb-4">
+                <span class="text-uppercase text-white-50 fw-bold text-end pe-3" style="width: 150px; font-size: 0.85rem; letter-spacing: 1px;">HTML y CSS</span>
+                <div class="progress flex-grow-1" style="height: 12px; background-color: #222; border-radius: 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 100%);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="text-white-50 ms-3 fw-bold" style="width: 40px; font-size: 0.85rem;">90%</span>
+            </div>
+
+        </div>
+    </section>
+    
     <section class="section">
         <div class="container">
             <h2 class="display-5 fw-bold mb-5">Qué hago</h2>
             <div class="row g-4">
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <h4 class="fw-bold">Programación</h4>
                     <p>Mis carteles capturan la atención con mensajes potentes, textos interesantes y elementos
                         visuales.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <h4 class="fw-bold">Diseño de WEB</h4>
                     <p>¡Justo ven! Creo una gran variedad visual de carteles e imágenes más grandes que la realidad.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <h4 class="fw-bold">Mejora de SEO</h4>
                     <p>Mis pequeños mundos transforman los espacios en mensajes visuales.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <h4 class="fw-bold">Responsive</h4>
                     <p>El medio es el mensaje. Capturado todo a través de una tipografía innovadora.</p>
                 </div>
@@ -96,27 +166,14 @@
                 </div>
 
                 <div class="col-lg-9">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="caja-borde p-4 text-center">
-                                <h3 class="titulo-borde fw-bold">TECNOLOGÍAS</h3>
+                    <div class="row m-0 px-3 px-md-0">
+                        <!-- Columna Tecnologías -->
+                        <div class="col-md-4 col-12 d-flex flex-column mb-4 mb-md-0">
+                            <div class="caja-borde p-3 p-md-4 text-center" style="border-bottom: none;">
+                                <h3 class="titulo-borde fw-bold mb-0">TECNOLOGÍAS</h3>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="caja-borde p-4 text-center">
-                                <h3 class="titulo-borde fw-bold">PROYECTOS</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="caja-borde p-4 text-center">
-                                <h3 class="titulo-borde fw-bold">EXPERIENCIA</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-4">
-                            <div class="caja-contenido p-4">
-                                <ul class="list-unstyled">
+                            <div class="caja-contenido p-4 flex-grow-1">
+                                <ul class="list-unstyled mb-0">
                                     <li>• HTML</li>
                                     <li>• CSS</li>
                                     <li>• BOOTSTRAP</li>
@@ -127,19 +184,27 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div
-                                class="caja-contenido p-4 text-center d-flex flex-column justify-content-center align-items-center">
+
+                        <!-- Columna Proyectos -->
+                        <div class="col-md-4 col-12 d-flex flex-column mb-4 mb-md-0">
+                            <div class="caja-borde p-3 p-md-4 text-center" style="border-bottom: none;">
+                                <h3 class="titulo-borde fw-bold mb-0">PROYECTOS</h3>
+                            </div>
+                            <div class="caja-contenido p-4 text-center d-flex flex-column justify-content-center align-items-center flex-grow-1">
                                 <a href="https://github.com/Giulianolapiana?tab=repositories" class="text-white text-decoration-none">
-                                    <p class="h5">VER PROYECTOS</p>
-                                    <a href="https://github.com/Giulianolapiana?tab=repositories" class="social-icon"><i class='fab fa-github' style='font-size:48px;'></i></a>
+                                    <p class="h5 fw-bold">VER PROYECTOS</p>
+                                    <a href="https://github.com/Giulianolapiana?tab=repositories" class="social-icon mt-2 mb-0"><i class='fab fa-github' style='font-size:48px;'></i></a>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div
-                                class="caja-contenido p-4 text-center d-flex justify-content-center align-items-center">
-                                <p class="h5">CULTURA DE LA EMPRESA</p>
+
+                        <!-- Columna Experiencia -->
+                        <div class="col-md-4 col-12 d-flex flex-column">
+                            <div class="caja-borde p-3 p-md-4 text-center" style="border-bottom: none;">
+                                <h3 class="titulo-borde fw-bold mb-0">EXPERIENCIA</h3>
+                            </div>
+                            <div class="caja-contenido p-4 text-center d-flex justify-content-center align-items-center flex-grow-1">
+                                <p class="h5 m-0">CULTURA DE LA EMPRESA</p>
                             </div>
                         </div>
                     </div>
@@ -149,6 +214,252 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Particle System Animation (Antigravity Style)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let w, h;
+        
+        let mouseX = 0;
+        let mouseY = 0;
+        let targetMouseX = 0;
+        let targetMouseY = 0;
+
+        window.addEventListener('mousemove', (e) => {
+            targetMouseX = (e.clientX / window.innerWidth) - 0.5;
+            targetMouseY = (e.clientY / window.innerHeight) - 0.5;
+        });
+
+        const particles = [];
+        const numParticles = 2500; // Adjusted for performance on scrolling site
+
+        function resize() {
+            w = canvas.width = window.innerWidth;
+            h = canvas.height = window.innerHeight; // Hero is 100vh
+        }
+        
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Particle {
+            constructor() {
+                this.reset(true);
+            }
+            
+            reset(initial = false) {
+                this.radius = 150 + Math.random() * 1500;
+                if(initial) {
+                    this.radius = 150 + Math.random() * 2500;
+                }
+                
+                this.theta = Math.random() * Math.PI * 2;
+                this.phi = Math.PI / 2 + (Math.random() - 0.5) * 2.0; 
+                
+                this.length = 2 + Math.random() * 6;
+                this.thickness = 1.0 + Math.random() * 1.5;
+                
+                this.orbitSpeed = 0.001 + Math.random() * 0.002;
+                this.outwardSpeed = 0.5 + Math.random() * 2.0;
+                this.yDrift = (Math.random() - 0.5) * 0.8;
+                
+                this.x3d = 0; this.y3d = 0; this.z3d = 0;
+                this.update3D();
+                this.px3d = this.x3d; this.py3d = this.y3d; this.pz3d = this.z3d;
+            }
+
+            update3D() {
+                this.x3d = this.radius * Math.sin(this.phi) * Math.cos(this.theta);
+                this.y3d = this.radius * Math.cos(this.phi);
+                this.z3d = this.radius * Math.sin(this.phi) * Math.sin(this.theta);
+            }
+
+            update() {
+                this.px3d = this.x3d; 
+                this.py3d = this.y3d; 
+                this.pz3d = this.z3d;
+                
+                this.theta -= this.orbitSpeed; 
+                this.radius += this.outwardSpeed;
+                
+                this.update3D();
+                this.y3d += this.yDrift;
+                
+                if (this.radius > 3000) {
+                    this.reset();
+                }
+            }
+
+            draw(mX, mY) {
+                const tiltX = 0.4 + mY * 0.8;
+                const tiltY = mX * 0.8;
+                
+                let y1 = this.y3d * Math.cos(tiltX) - this.z3d * Math.sin(tiltX);
+                let z1 = this.y3d * Math.sin(tiltX) + this.z3d * Math.cos(tiltX);
+                let x1 = this.x3d;
+                
+                let xRot = x1 * Math.cos(tiltY) - z1 * Math.sin(tiltY);
+                let zRot = x1 * Math.sin(tiltY) + z1 * Math.cos(tiltY);
+                let yRot = y1;
+
+                let py1 = this.py3d * Math.cos(tiltX) - this.pz3d * Math.sin(tiltX);
+                let pz1 = this.py3d * Math.sin(tiltX) + this.pz3d * Math.cos(tiltX);
+                let px1 = this.px3d;
+                
+                let pxRot = px1 * Math.cos(tiltY) - pz1 * Math.sin(tiltY);
+                let pzRot = px1 * Math.sin(tiltY) + pz1 * Math.cos(tiltY);
+                let pyRot = py1;
+
+                const fov = 1200;
+                const scale = fov / (fov + zRot);
+                const pScale = fov / (fov + pzRot);
+
+                if (fov + zRot < 0 || fov + pzRot < 0) return;
+
+                const originX = w / 2 - mX * w * 0.15;
+                const originY = h / 2 - mY * h * 0.15;
+
+                const x2d = originX + xRot * scale;
+                const y2d = originY + yRot * scale;
+                const px2d = originX + pxRot * pScale;
+                const py2d = originY + pyRot * pScale;
+
+                const angle = Math.atan2(y2d - py2d, x2d - px2d);
+
+                let alpha = Math.max(0.1, Math.min(1, scale * 1.5 - 0.2));
+                
+                const dist2d = Math.hypot(x2d - w/2, y2d - h/2);
+                if (dist2d < 250) {
+                    alpha *= (dist2d / 250) * (dist2d / 250);
+                }
+                
+                if (alpha <= 0.02) return;
+
+                const normalizedX = x2d / w; 
+                // Neon colors: Cyan (180) -> Purple (270) -> Magenta (320)
+                const targetHue = 180 + normalizedX * 140; 
+
+                const pLength = this.length * scale;
+                const pThickness = this.thickness * scale;
+                
+                ctx.beginPath();
+                ctx.moveTo(x2d - Math.cos(angle) * pLength, y2d - Math.sin(angle) * pLength);
+                ctx.lineTo(x2d + Math.cos(angle) * pLength, y2d + Math.sin(angle) * pLength);
+                ctx.strokeStyle = `hsla(${targetHue % 360}, 100%, 70%, ${alpha})`;
+                // Add neon glow
+                ctx.shadowBlur = 10 * scale;
+                ctx.shadowColor = `hsla(${targetHue % 360}, 100%, 60%, ${alpha})`;
+                ctx.lineWidth = Math.max(0.5, pThickness);
+                ctx.lineCap = 'round';
+                ctx.stroke();
+                
+                // Reset shadow for next draws
+                ctx.shadowBlur = 0;
+            }
+        }
+
+        // --- Floating Icons System ---
+        // FontAwesome HTML5 (\uf13b), CSS3 (\uf13c), JS (\uf3b8), React (\uf41b), Node (\uf3d9), Database (\uf1c0), Python (\uf3e2), Github (\uf09b)
+        const iconChars = ['\uf13b', '\uf13c', '\uf3b8', '\uf41b', '\uf3d9', '\uf1c0', '\uf3e2', '\uf09b'];
+        const floatingIcons = [];
+        const numIcons = 30;
+
+        class FloatingIcon {
+            constructor() {
+                this.reset();
+                this.radius = 200 + Math.random() * 2000; // start scattered
+            }
+            
+            reset() {
+                this.radius = 100 + Math.random() * 500;
+                this.theta = Math.random() * Math.PI * 2;
+                this.phi = Math.PI / 2 + (Math.random() - 0.5) * 2.5; 
+                
+                this.char = iconChars[Math.floor(Math.random() * iconChars.length)];
+                this.size = 20 + Math.random() * 40;
+                
+                this.orbitSpeed = (Math.random() - 0.5) * 0.004;
+                this.outwardSpeed = 0.2 + Math.random() * 0.8;
+                this.yDrift = (Math.random() - 0.5) * 0.5;
+                
+                this.x3d = 0; this.y3d = 0; this.z3d = 0;
+            }
+
+            update() {
+                this.theta += this.orbitSpeed; 
+                this.radius += this.outwardSpeed;
+                
+                this.x3d = this.radius * Math.sin(this.phi) * Math.cos(this.theta);
+                this.y3d = this.radius * Math.cos(this.phi) + this.yDrift * this.radius * 0.01;
+                this.z3d = this.radius * Math.sin(this.phi) * Math.sin(this.theta);
+                
+                if (this.radius > 3500) {
+                    this.reset();
+                }
+            }
+
+            draw(mX, mY) {
+                const tiltX = 0.4 + mY * 0.8;
+                const tiltY = mX * 0.8;
+                
+                let yRot = this.y3d * Math.cos(tiltX) - this.z3d * Math.sin(tiltX);
+                let zRot = this.y3d * Math.sin(tiltX) + this.z3d * Math.cos(tiltX);
+                let xRot = this.x3d * Math.cos(tiltY) - zRot * Math.sin(tiltY);
+                zRot = this.x3d * Math.sin(tiltY) + zRot * Math.cos(tiltY);
+
+                const fov = 1200;
+                const scale = fov / (fov + zRot);
+
+                if (fov + zRot < 0) return;
+
+                const originX = w / 2 - mX * w * 0.15;
+                const originY = h / 2 - mY * h * 0.15;
+
+                const x2d = originX + xRot * scale;
+                const y2d = originY + yRot * scale;
+
+                let alpha = Math.max(0.1, Math.min(0.8, scale * 1.5 - 0.2));
+                const dist2d = Math.hypot(x2d - w/2, y2d - h/2);
+                if (dist2d < 250) {
+                    alpha *= (dist2d / 250) * (dist2d / 250);
+                }
+                if (alpha <= 0.02) return;
+
+                ctx.font = `900 ${this.size * scale}px "Font Awesome 6 Brands", "Font Awesome 6 Free"`;
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha * 0.5})`; // Semi-transparent white icons
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(this.char, x2d, y2d);
+            }
+        }
+
+        for (let i = 0; i < numParticles; i++) {
+            particles.push(new Particle());
+        }
+        for (let i = 0; i < numIcons; i++) {
+            floatingIcons.push(new FloatingIcon());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, w, h);
+            
+            mouseX += (targetMouseX - mouseX) * 0.05;
+            mouseY += (targetMouseY - mouseY) * 0.05;
+            
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw(mouseX, mouseY);
+            }
+
+            for (let i = 0; i < floatingIcons.length; i++) {
+                floatingIcons[i].update();
+                floatingIcons[i].draw(mouseX, mouseY);
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
 </body>
 
 </html>
